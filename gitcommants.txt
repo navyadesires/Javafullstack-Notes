@@ -1,0 +1,878 @@
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ ls -a
+./   .git/         file1.txt   file14.txt  file3.txt     sampleproject/
+../  file.234.txt  file13.txt  file2.txt   gitexamples/
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+touch quotation.txt
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+quotation.txt [unix] (22:15 28/12/2021)                                0,0-1 All
+"quotation.txt" 0L, 0B
+-- INSERT --
+$ls
+file1.txt file13.txt file14.txt file2.txt file3.txt git
+elephant
+
+banana
+
+lion
+
+parrot
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+file1.txt [dos] (13:15 28/12/2021) 
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ ls
+file.234.txt  file13.txt  file2.txt  gitexamples/   sampleproject/
+file1.txt     file14.txt  file3.txt  quotation.txt
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ vi file1.txt
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ cat file1.txt
+elephant
+
+banana
+
+lion
+
+parrot
+
+monkey
+
+
+
+gorilla
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch branchone
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git add .
+warning: adding embedded git repository: sampleproject/OnlineEcommerceApplication1
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> sampleproject/OnlineEcommerceApplication1
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached sampleproject/OnlineEcommerceApplication1
+hint:
+hint: See "git help submodule" for more information.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "all files added"
+[main b1d4ddb] all files added
+ 4 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 .quotation.txt.swp
+ create mode 100644 quotation.txt
+ create mode 160000 sampleproject/OnlineEcommerceApplication1
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "all files added"
+[main b1d4ddb] all files added
+ 4 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 .quotation.txt.swp
+ create mode 100644 quotation.txt
+ create mode 160000 sampleproject/OnlineEcommerceApplication1
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .quotation.txt.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git branch
+* branchone
+  main
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ touch index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ vi index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ cat index.html
+<h1>
+         this is the html file created using vi editor
+</h1>
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in quotation.txt.
+The file will have its original line endings in your working directory
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git status
+On branch branchone
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   quotation.txt
+        new file:   sampleproject/OnlineEcommerceApplication1
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git commit -m "added index.html and modified quotation.txt"
+[branchone bafd25a] added index.html and modified quotation.txt
+ 3 files changed, 6 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 quotation.txt
+ create mode 160000 sampleproject/OnlineEcommerceApplication1
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git log
+commit bafd25a3d24ddaf38515b4b301100f7556bb716f (HEAD -> branchone)
+Author: Ramya Tripurana <navyadesires@gmail.com>
+Date:   Tue Dec 28 23:29:48 2021 +0530
+
+    added index.html and modified quotation.txt
+
+commit 3e6c4e6a7be1e8541b5cd39c142363beade641e3 (origin/main)
+Author: navyadesires <52997251+navyadesires@users.noreply.github.com>
+Date:   Tue Dec 28 20:00:42 2021 +0530
+
+    created a file234.txt
+
+commit f1e9aa39f608394400327a5aacf3d11c46d3dee4
+Author: Ramya Tripurana <navyadesires@gmail.com>
+Date:   Tue Dec 28 19:47:50 2021 +0530
+
+    all files added
+
+commit 71720fe437aceba48189b749dcfbf9e60095d5f2
+Author: Ramya Tripurana <navyadesires@gmail.com>
+Date:   Tue Dec 28 19:21:14 2021 +0530
+
+    all fies are committed
+
+commit 3ef528c9a1cf84d4554dcf2dfa7a7e43866d7f48
+Author: Ramya Tripurana <navyadesires@gmail.com>
+Date:   Tue Dec 28 19:16:55 2021 +0530
+
+    all fies are committed
+:
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git branch
+  branchone
+* main
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git branch
+  branchone
+* main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git checkout -b branchtwo
+Switched to a new branch 'branchtwo'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git status
+On branch branchtwo
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ touch home.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git status
+On branch branchtwo
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$  git commit -m "home.html added"
+[branchtwo ad1f378] home.html added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 home.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git status
+On branch branchtwo
+nothing to commit, working tree clean
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git log --oneline
+ad1f378 (HEAD -> branchtwo) home.html added
+b1d4ddb (main) all files added
+3e6c4e6 (origin/main) created a file234.txt
+f1e9aa3 all files added
+71720fe all fies are committed
+3ef528c all fies are committed
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit "adding origin/main"
+error: pathspec 'adding origin/main' did not match any file(s) known to git
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git log --oneline
+b8d9e1f (HEAD -> main, origin/main) Merge branch 'branchone'
+bafd25a (branchone) added index.html and modified quotation.txt
+b1d4ddb all files added
+3e6c4e6 created a file234.txt
+f1e9aa3 all files added
+71720fe all fies are committed
+3ef528c all fies are committed
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git merge branchtwo
+Merge made by the 'ort' strategy.
+ home.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 home.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git log --oneline
+35dea1c (HEAD -> main) Merge branch 'branchtwo'
+b8d9e1f (origin/main) Merge branch 'branchone'
+ad1f378 (branchtwo) home.html added
+bafd25a (branchone) added index.html and modified quotation.txt
+b1d4ddb all files added
+3e6c4e6 created a file234.txt
+f1e9aa3 all files added
+71720fe all fies are committed
+3ef528c all fies are committed
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git merge branchtwo
+Already up to date.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git checkout branchtwo
+Switched to branch 'branchtwo'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ vi home.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git status
+On branch branchtwo
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git add .
+warning: LF will be replaced by CRLF in home.html.
+The file will have its original line endings in your working directory
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git commit -m "modified home.html"
+[branchtwo 04741d5] modified home.html
+ 1 file changed, 1 insertion(+)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git merge branchtwo
+Merge made by the 'ort' strategy.
+ home.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ vi index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "modified index.html"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "modified index.html"
+[main b81cfef] modified index.html
+ 1 file changed, 1 insertion(+)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git checkout branchtwo
+Switched to branch 'branchtwo'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ vi index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ ls
+file.234.txt  file13.txt  file2.txt  gitexamples/  quotation.txt
+file1.txt     file14.txt  file3.txt  home.html     sampleproject/
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ cat index.html
+cat: index.html: No such file or directory
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ cat index.html
+cat: index.html: No such file or directory
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git branch
+  branchone
+* branchtwo
+  main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchtwo)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "index.html added"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "index.html added"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git add index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "index.html added"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ ls
+file.234.txt  file14.txt  gitexamples/  quotation.txt
+file1.txt     file2.txt   home.html     sampleproject/
+file13.txt    file3.txt   index.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ rm file13.txt
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ ls
+file.234.txt  file14.txt  file3.txt     home.html   quotation.txt
+file1.txt     file2.txt   gitexamples/  index.html  sampleproject/
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file13.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "file13 deleted"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file13.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git rm file13.txt
+rm 'file13.txt'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m"file deleted"
+[main 2684401] file deleted
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file13.txt
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git log --oneline
+2684401 (HEAD -> main) file deleted
+b81cfef (origin/main) modified index.html
+cd51ea8 Merge branch 'branchtwo'
+04741d5 (branchtwo) modified home.html
+35dea1c Merge branch 'branchtwo'
+b8d9e1f Merge branch 'branchone'
+ad1f378 home.html added
+bafd25a (branchone) added index.html and modified quotation.txt
+b1d4ddb all files added
+3e6c4e6 created a file234.txt
+f1e9aa3 all files added
+71720fe all fies are committed
+3ef528c all fies are committed
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git revert HEAD --no-edit
+[main 60249f0] Revert "file deleted"
+ Date: Wed Dec 29 07:11:43 2021 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file13.txt
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ cat first.html
+<html>
+<head>
+<title> This is Ramya html page
+<script>
+name="Ramya";//string
+age=35;/integer
+d= -45;//negative integer
+salary = 45000.45; //floating point
+gender = 'm';//character
+name= 123456;
+if("Ramya" ===name){
+alert("hiii -----"+name + "'s "+"age is "+age+" and salary is "+salary);
+}
+else{
+alert(value);
+alert("bye dear");
+</script>
+<body>
+<p> <strong> this is Ramya adding strong lines</strong>
+</p>
+<table>
+<thead> Table</table>
+  <tr>
+<td> Navya</td>
+<tr>
+ <table>
+<thead> Table</table>
+  <tr>
+<td> Ramya</td>
+<tr>
+<table>
+<thead> Table</table>
+  <tr>
+<td> Tripurana</td>
+<tr>
+</body>
+</html>
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git remote -v
+origin  https://github.com/navyadesires/gitpractice.git (fetch)
+origin  https://github.com/navyadesires/gitpractice.git (push)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 627 bytes | 34.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/navyadesires/gitpractice.git
+   5fc7c14..0909d17  main -> main
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch
+  branchone
+  branchtwo
+* main
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git push origin main
+Everything up-to-date
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+pull tothe branch
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch
+  branchone
+  branchtwo
+* main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git push origin branchone
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 601 bytes | 120.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'branchone' on GitHub by visiting:
+remote:      https://github.com/navyadesires/gitpractice/pull/new/branchone
+remote:
+To https://github.com/navyadesires/gitpractice.git
+ * [new branch]      branchone -> branchone
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ touch youtube1.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ ls
+file.234.txt  file1.txt  file13.txt  file14.txt  file2.txt  file3.txt  first.html  gitexamples/  home.html  index.html  quotation.txt  sampleproject/  youtube1.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git checkout branchone
+Switched to branch 'branchone'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git status
+On branch branchone
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        youtube1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git commit -m "youtube1.html"
+error: pathspec 'm' did not match any file(s) known to git
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git push origin branchone
+Everything up-to-date
+
+ Merged
+navyadesires merged 2 commits into main from branchone 
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ touch facebook.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git commit -m "facebook.html"
+[branchone 3e21733] facebook.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 facebook.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git push origin branchone
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 251 bytes | 251.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/navyadesires/gitpractice.git
+   d2ad2c8..3e21733  branchone -> branchone
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git branch
+  brachone
+* branchone
+  branchthree
+  branchtwo
+  main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchone)
+$ git checkout branchthree
+Switched to branch 'branchthree'
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (branchthree)
+$ git branch -d branchthree
+error: Cannot delete branch 'branchthree' checked out at 'D:/G/gitpractice'
+
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch
+  brachone
+  branchone
+  branchthree
+  branchtwo
+* main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git fetch https://github.com/navyadesires/myfeatchrepo.git
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.27 KiB | 3.00 KiB/s, done.
+From https://github.com/navyadesires/myfeatchrepo
+ * branch            HEAD       -> FETCH_HEAD
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git log --onelog
+fatal: unrecognized argument: --onelog
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git log --oneline
+f9bbfe6 (HEAD -> main) addding gitpractice
+e02109d (origin/secbranch, origin/branchthree) new reposity added
+0909d17 file1.txt add with numaric data
+5ec0b49 added three new lines
+5fc7c14 deleted hello.html file
+4201fae added html page
+bf7bf9c Revert "modified index.html"
+60249f0 Revert "file deleted"
+2684401 file deleted
+b81cfef modified index.html
+cd51ea8 Merge branch 'branchtwo'
+04741d5 (branchtwo) modified home.html
+35dea1c Merge branch 'branchtwo'
+b8d9e1f Merge branch 'branchone'
+ad1f378 home.html added
+bafd25a added index.html and modified quotation.txt
+b1d4ddb all files added
+3e6c4e6 created a file234.txt
+f1e9aa3 all files added
+71720fe all fies are committed
+3ef528c all fies are committed
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git fetch -v
+POST git-upload-pack (165 bytes)
+From https://github.com/navyadesires/gitpractice
+ = [up to date]      main        -> origin/main
+ = [up to date]      branchone   -> origin/branchone
+ = [up to date]      branchthree -> origin/branchthree
+ = [up to date]      secbranch   -> origin/secbranch
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git remote -v
+origin  https://github.com/navyadesires/gitpractice.git (fetch)
+origin  https://github.com/navyadesires/gitpractice.git (push)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git remote set-url https://github.com/navyadesires/myfeatchrepo.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git remote origin set-url https://github.com/navyadesires/myfeatchrepo.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git remote set-url origin https://github.com/navyadesires/myfeatchrepo.git
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$  git remote -v
+origin  https://github.com/navyadesires/myfeatchrepo.git (fetch)
+origin  https://github.com/navyadesires/myfeatchrepo.git (push)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git fetch origin myfetchbranch
+From https://github.com/navyadesires/myfeatchrepo
+ * branch            myfetchbranch -> FETCH_HEAD
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch - r
+fatal: '-' is not a valid branch name.
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch -r
+  origin/branchone
+  origin/branchthree
+  origin/main
+  origin/myfetchbranch
+  origin/secbranch
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 21 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git commit -m "featch from remote to local"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 21 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git branch
+  brachone
+  branchone
+  branchthree
+  branchtwo
+* main
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$ git push origin main
+fatal: unable to access 'https://github.com/navyadesires/myfeatchrepo.git/': Could not resolve host: github.com
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/G/gitpractice (main)
+$
+
+
+
+
+
+

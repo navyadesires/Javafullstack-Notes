@@ -1,0 +1,151 @@
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ ls
+README.md     file1.txt   file14.txt  file3.txt   gitexamples/  index.html
+file.234.txt  file13.txt  file2.txt   first.html  home.html     quotation.txt
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.234.txt
+        file1.txt
+        file13.txt
+        file14.txt
+        file2.txt
+        file3.txt
+        first.html
+        gitexamples/
+        home.html
+        index.html
+        quotation.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git add .
+warning: LF will be replaced by CRLF in file14.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in gitexamples/file1111.doc.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in gitexamples/file13213.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in gitexamples/file23.txt.
+The file will have its original line endings in your working directory
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file.234.txt
+        new file:   file1.txt
+        new file:   file13.txt
+        new file:   file14.txt
+        new file:   file2.txt
+        new file:   file3.txt
+        new file:   first.html
+        new file:   gitexamples/file1.doc
+        new file:   gitexamples/file11.doc
+        new file:   gitexamples/file111.doc
+        new file:   gitexamples/file1111.doc
+        new file:   gitexamples/file1111a.doc
+        new file:   gitexamples/file111a.doc
+        new file:   gitexamples/file13213.txt
+        new file:   gitexamples/file23.txt
+        new file:   home.html
+        new file:   index.html
+        new file:   quotation.txt
+
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git commit -m "allfies are added"
+[main 47f3bd7] allfies are added
+ 18 files changed, 120 insertions(+)
+ create mode 100644 file.234.txt
+ create mode 100644 file1.txt
+ create mode 100644 file13.txt
+ create mode 100644 file14.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+ create mode 100644 first.html
+ create mode 100644 gitexamples/file1.doc
+ create mode 100644 gitexamples/file11.doc
+ create mode 100644 gitexamples/file111.doc
+ create mode 100644 gitexamples/file1111.doc
+ create mode 100644 gitexamples/file1111a.doc
+ create mode 100644 gitexamples/file111a.doc
+ create mode 100644 gitexamples/file13213.txt
+ create mode 100644 gitexamples/file23.txt
+ create mode 100644 home.html
+ create mode 100644 index.html
+ create mode 100644 quotation.txt
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git push origin main
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (16/16), 1.58 KiB | 202.00 KiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/navyadesires/startrepo.git
+   9cdb2ed..47f3bd7  main -> main
+put the branch:
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ touch youtube.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ ls
+README.md     file13.txt  file3.txt     home.html                 quotation.txt
+file.234.txt  file14.txt  first.html    index.html                youtube.html
+file1.txt     file2.txt   gitexamples/  mynewfileinnewbranch.txt
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git add .
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   youtube.html
+
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git commit -m "adding youtube.html"
+[main 8336753] adding youtube.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 youtube.html
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Omeprakash@DESKTOP-R6HUCK2 MINGW64 /d/startrepo/startrepository/startrepo (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 280 bytes | 280.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/navyadesires/startrepo.git
+   94f287f..8336753  main -> main
+
+
+
